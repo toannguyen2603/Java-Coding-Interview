@@ -20,11 +20,12 @@ public class Bai_1_ReverseString {
 	
 	
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter any string: ");
-		String value = scanner.nextLine();
+		try (Scanner scanner = new Scanner(System.in)) {
+			System.out.println("Enter any string: ");
+			String value = scanner.nextLine();
 //		reverseString(value);
-		reverseStringBuffer(value);
+			reverseStringBuffer(value);
+		}
 	}
 
 }
